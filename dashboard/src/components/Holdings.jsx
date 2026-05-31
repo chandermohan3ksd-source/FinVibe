@@ -5,7 +5,7 @@ import { VerticalGraph } from "./vericalChart";
 export default function Holdings() {
   let [allHolding, setAllHolding] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3000/allholding").then((res) => {
+    axios.get("https://backend-wmsa.onrender.com/allholding").then((res) => {
       setAllHolding(res.data);
     });
   }, []);
