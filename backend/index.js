@@ -16,9 +16,6 @@ const dns=require("dns");
 dns.setServers(["1.1.1.1","8.8.8.8"]);
 app.use(cors());
 app.use(bodyParse.json());
-app.get("/",(req,res)=>{
-    res.send("hi");
-});
 app.get("/allholding",async(req,res)=>{
     let holdingAll= await holdingModel.find({});
     console.log(holdingAll);
