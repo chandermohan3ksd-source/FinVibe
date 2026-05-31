@@ -28,7 +28,7 @@ export default function Login(){
     setLoginData({email:"",password:""});
     setError({email:"",password:""});
     try{
-       let res=await axios.post("http://localhost:3000/login",loginData);
+       let res=await axios.post("https://backend-wmsa.onrender.com/login",loginData);
     setMsg(res.data.message);
     if(res.data.token){
     setTimeout(()=>{
