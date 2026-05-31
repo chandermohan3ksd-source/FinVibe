@@ -1,0 +1,22 @@
+#supportContainer{
+    background-color: rgb(56,126,209);
+    color:white
+}
+#supportTitle{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 110px  ;
+}
+#supportContainer a{
+    color:white;
+    margin-left: 10px;
+}
+#mainRowContainer{
+    margin: 0px 135px;
+}
+#supportContainer input{
+    padding: 20px 20px;
+    border:none;
+    border-radius: 10px;
+    width:100%;
+}

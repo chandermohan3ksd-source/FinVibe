@@ -1,0 +1,7 @@
+# Sabhi folders ke node_modules ko ignore karne ke liye
+backend/node_modules/
+frontend/node_modules/
+dashboard/node_modules/
+
+# Backend ki .env file ko ignore karne ke liye
+backend/.env

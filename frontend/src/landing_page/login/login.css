@@ -1,0 +1,20 @@
+
+.loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#loForm{
+    padding: 20px 50px 50px 50px;
+    width: 25%;
+    background-color: aquamarine;
+    margin: 35px 100px 0px 100px;
+}
+ .alertMsg{
+    width: 30%;
+ }
+
+
+
+
