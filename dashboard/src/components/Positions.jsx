@@ -5,7 +5,7 @@ export default function Positions() {
   let [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/allposition").then((res) => {
+    axios.get("https://backend-wmsa.onrender.com/allposition").then((res) => {
       setAllPositions(res.data);
     });
   }, []);
