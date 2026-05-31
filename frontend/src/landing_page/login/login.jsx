@@ -33,7 +33,7 @@ export default function Login(){
     if(res.data.token){
     setTimeout(()=>{
       setMsg("");
-    window.location.href = `http://localhost:5174/?token=${res.data.token}&username=${res.data.username}`;
+    window.location.href =`https://dashboard-hjdy.onrender.com/?token=${res.data.token}&username=${res.data.username}`;
     },2000)
     }
    
