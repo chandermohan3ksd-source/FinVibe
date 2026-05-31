@@ -18,7 +18,7 @@ const urlParams=new URLSearchParams(window.location.search);
   const finalUsername=localStorage.getItem("username") || "User";
   console.log(finalToken);
     if(!finalToken){
-        window.location.href="http://localhost:5173/";
+        window.location.href="https://finvibe.onrender.com";
         return null;
     }
 
