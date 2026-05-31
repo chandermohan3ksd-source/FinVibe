@@ -20,7 +20,7 @@ const navigate=useNavigate();
      const handleSubmit=async(event)=>{
          event.preventDefault();
           try{
-           const res= await axios.post("http://localhost:3000/signup",formdata);
+           const res= await axios.post("https://backend-wmsa.onrender.com/signup",formdata);
            setMsg(res.data.message);
               SetFormData({username:"",password:"",email:""})
            setTimeout(() => {
