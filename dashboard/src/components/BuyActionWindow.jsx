@@ -11,13 +11,14 @@ const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
-  const handleBuyClick = () => {
-    axios.post("https://backend-wmsa.onrender.com/newOrder", {
+  const handleBuyClick = async() => {
+ let res =  await axios.post("https://backend-wmsa.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "BUY",
     });
+    console.log("res is ",res.data);
 
     GeneralContext.closeBuyWindow();
   };
