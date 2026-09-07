@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { Link } from "react-router-dom";
 
 import axios from "axios";
@@ -10,6 +10,7 @@ import "./BuyActionWindow.css";
 const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
+  const {closeBuyWindow} = useContext(GeneralContext);
 
   const handleBuyClick = async() => {
  let res =  await axios.post("https://backend-wmsa.onrender.com/newOrder", {
@@ -20,11 +21,11 @@ const BuyActionWindow = ({ uid }) => {
     });
     console.log("res is ",res.data);
 
-    GeneralContext.closeBuyWindow();
+    closeBuyWindow();
   };
 
   const handleCancelClick = () => {
-    GeneralContext.closeBuyWindow();
+    closeBuyWindow();
   };
 
   return (
